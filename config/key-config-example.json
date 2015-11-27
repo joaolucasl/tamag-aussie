@@ -1,0 +1,9 @@
+{
+  "database": {
+    "url": "http://localhost",
+    "port": "12345",
+    "user": "hahahaa",
+    "pwd": "lololo",
+    "dialect": "MySQL"
+  }
+}

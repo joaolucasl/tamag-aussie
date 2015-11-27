@@ -11,7 +11,12 @@ After downloading the project (d'oh), you're going to need Ruby installed - This
 
 `gem install bundler`
 
-After that, in the main directory, run `bundle install` and it install the dependecies for the project.
+After that, in the main directory, run `bundle install` and it install the dependecies for the project. Now, we need to setup the actual keys configuration file. For security, it is being ignored by Git and you will need to setup it manually.
+
+`cp config/key-config-example.json key-config.json`
+
+After that, change the data to match your server and API keys configuration.
+
 
 ## LICENSE
 
