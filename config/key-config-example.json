@@ -4,6 +4,7 @@
     "port": "12345",
     "user": "hahahaa",
     "pwd": "lololo",
-    "dialect": "MySQL"
+    "dialect": "mysql2",
+    "database": "tamagotchi"
   }
 }

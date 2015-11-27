@@ -1,5 +1,5 @@
 require 'sinatra'
-
+require '/config/db.rb'
 
 get '/hi' do
   "Hello World!"
