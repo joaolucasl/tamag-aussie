@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem 'open-uri'
 gem 'sinatra'
 gem 'json'
 gem 'activerecord'
