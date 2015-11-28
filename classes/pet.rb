@@ -1,4 +1,6 @@
 require_relative '../api/places'
+require_relative '../api/weather'
+require_relative 'location'
 
 class Pet
   attr_reader   :name
@@ -19,6 +21,7 @@ class Pet
     @coins = 80
     @home = home
     @current = current
+    @weather = get_weather(current)
   end
 
   def update_all
@@ -53,12 +56,18 @@ class Pet
 
   end
 
+  def update_weather
+    @weather = get_weather @current
+  end
+
   def print_stats
     puts "#{@name} has these stats:"
     puts "\tHealth:       #{@health}"
     puts "\tIntelligence: #{@intelligence}"
+    puts "\tHappines:     #{@happiness}"
     puts "\tHunger:       #{@hunger}"
     puts "\tCoins:        #{@coins}"
+    puts "\tWeather:      #{@weather["summary"]}"
     puts ""
   end
 
