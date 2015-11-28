@@ -1,3 +1,6 @@
+require_relative '../api/health'
+require_relative '../api/intelligence'
+
 class Pet
   attr_reader   :name
   attr_reader   :health
@@ -28,9 +31,13 @@ class Pet
     if @health > 100
       @health = 100
     end
-
   end
 
-
+  def udpate_intelligence
+    @intelligence += rate_intelligence(current)
+    if @intelligence > 100
+      @intelligence = 100
+    end
+  end
 
 end
