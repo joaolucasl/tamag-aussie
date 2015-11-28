@@ -19,4 +19,18 @@ class Pet
     @current = current
   end
 
+  def update_all
+    self.update_health
+  end
+
+  def update_health
+    @health += rate_health(current)
+    if @health > 100
+      @health = 100
+    end
+
+  end
+
+
+
 end
