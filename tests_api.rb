@@ -2,11 +2,14 @@
 
 require_relative 'api/places'
 require_relative 'classes/location'
+require_relative 'classes/pet'
 
 here = Location.new(-27.4667, 153.0333)
 
-health = rate(here, 'hospital')
-education = rate(here, 'university')
+pet = Pet.new('Bobby', here, here)
 
-puts "Health :   #{health}"
-puts "Education: #{education}"
+pet.print_stats
+
+pet.update_all
+
+pet.print_stats
