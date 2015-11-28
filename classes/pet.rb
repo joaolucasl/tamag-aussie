@@ -1,5 +1,4 @@
-require_relative '../api/health'
-require_relative '../api/intelligence'
+require_relative '../api/places'
 
 class Pet
   attr_reader   :name
@@ -27,14 +26,14 @@ class Pet
   end
 
   def update_health
-    @health += rate_health(current)
+    @health += rate(current, 'hospital')
     if @health > 100
       @health = 100
     end
   end
 
   def udpate_intelligence
-    @intelligence += rate_intelligence(current)
+    @intelligence += rate(current, 'university')
     if @intelligence > 100
       @intelligence = 100
     end
