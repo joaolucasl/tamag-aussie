@@ -1,3 +1,6 @@
+require_relative '../api/health'
+require_relative '../api/intelligence'
+
 class Pet
   attr_reader   :name
   attr_reader   :health
@@ -17,6 +20,24 @@ class Pet
     @coins = 100
     @home = home
     @current = current
+  end
+
+  def update_all
+    self.update_health
+  end
+
+  def update_health
+    @health += rate_health(current)
+    if @health > 100
+      @health = 100
+    end
+  end
+
+  def udpate_intelligence
+    @intelligence += rate_intelligence(current)
+    if @intelligence > 100
+      @intelligence = 100
+    end
   end
 
 end
