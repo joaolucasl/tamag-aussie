@@ -1,10 +1,10 @@
 class Location
   attr_accessor :lat
-  attr_accessor :long
+  attr_accessor :lng
 
-  def initialize(lat, long)
+  def initialize(lat, lng)
     @lat = lat
-    @long = long
+    @lng = lng
   end
 
 end
