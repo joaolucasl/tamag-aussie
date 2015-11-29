@@ -19,6 +19,7 @@ end
 
 get '/pet' do
   begin
+    pet.update_all
     @pet = pet
     erb :pet
   rescue
