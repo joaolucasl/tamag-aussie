@@ -17,6 +17,12 @@ After that, in the main directory, run `bundle install` and it install the depen
 
 After that, change the data to match your server and API keys configuration.
 
+Now, we have to setup the database tables. After updating your database details in `key-config.json`, our migration script will create the needed tables and relationships for you. Run:
+
+`ruby migrations.rb`
+
+in the main directory to get the tables setup to your database.
+
 
 ## LICENSE
 
