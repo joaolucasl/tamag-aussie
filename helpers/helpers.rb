@@ -13,7 +13,7 @@ def get_key(type)
             File.read(
               File.join(
                 File.dirname(File.dirname(File.absolute_path(__FILE__))),
-                'config/keys.json'
+                'config/key-config.json'
               )
             )
           )['key'][type]

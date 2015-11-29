@@ -6,5 +6,9 @@
     "pwd": "lololo",
     "dialect": "mysql2",
     "database": "tamagotchi"
+  },
+  "key": {
+    "google": "XXXXXXXXXXXXXXXXX",
+    "forecast_io": "YYYYYYYYYYYYYYYy"
   }
 }
