@@ -71,4 +71,8 @@ class Pet
     puts ""
   end
 
+  def weather_summary
+    @weather["summary"]
+  end
+
 end
