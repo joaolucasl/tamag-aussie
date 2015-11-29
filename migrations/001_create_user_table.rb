@@ -7,6 +7,7 @@ class CreateUserTable < ActiveRecord::Migration
       t.string :name
       t.string :email
       t.string :password
+      t.timestamps null: false
     end
     puts '#### Ran CreateUsers UP  #####'
   end

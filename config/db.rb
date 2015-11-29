@@ -5,11 +5,8 @@ module DB
 
   def self.Connect
     begin
-      fs = File.read('./config/key-config.json')
+      fs = File.read(File.dirname(__FILE__) + '/key-config.json')
       dbConfig = JSON.parse(fs)["database"]
-
-      puts dbConfig
-
 
       ActiveRecord::Base.establish_connection(
         :adapter => dbConfig["dialect"],

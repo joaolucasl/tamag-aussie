@@ -3,8 +3,8 @@
 class CreatePetTable < ActiveRecord::Migration
   # Function to create the table 'users'
   def up
-    create_table :pet,:force => true do |t|
-      t.string :type
+    create_table :pets,:force => true do |t|
+      t.string :species
       t.string :name
       t.string :health
       t.string :intelligence

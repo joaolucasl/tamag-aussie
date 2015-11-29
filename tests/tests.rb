@@ -1,5 +1,5 @@
-require_relative 'classes/location'
-require_relative 'classes/pet'
+require_relative '../classes/location'
+require_relative '../classes/pet'
 
 puts "\nLocation test:"
 
