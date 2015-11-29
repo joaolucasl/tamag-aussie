@@ -18,3 +18,13 @@ def get_key(type)
             )
           )['key'][type]
 end
+
+def rater(distance)
+  if distance > 5
+    return -10
+  elsif distance > 2
+    return 0
+  else
+    return 10
+  end
+end
