@@ -20,11 +20,11 @@ def get_key(type)
 end
 
 def rater(distance)
-  if distance > 5
-    return -10
-  elsif distance > 2
+  if distance > 2
+    return -5
+  elsif distance > 1
     return 0
   else
-    return 10
+    return 5
   end
 end
