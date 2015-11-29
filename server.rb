@@ -19,6 +19,7 @@ end
 
 get '/pet' do
   begin
+    @pet = pet
     erb :pet
   rescue
     error
