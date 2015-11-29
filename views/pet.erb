@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<style>
+	html {
+		background: #226666;
+	}
+
+	body {
+		text-align: center;
+		height: 100vh;
+		color: white;
+		background: radial-gradient(#4f9393, #226666);
+	}
+
+	.progress-value {
+		position:absolute;
+		right:0;
+		left:0;
+		font-weight:bold;
+	}
+	</style>
+</head>
+
+<body><div class="container">
+
+	<h1><%= "#{@pet.name}" %></h1>
+
+	<img src="http://40.media.tumblr.com/0193b8d1474c8fe47d442600e871e830/tumblr_nnw351Plux1u41edfo2_1280.jpg" class="img-rounded" alt="bobby-picture" width="400" height="300">
+
+	<p style="font-size:24">Weather: <b style"color:yellow"><%= " #{@pet.weather_summary} " %></p></p>
+
+	<div class="row"><div class="col-sm-offset-4 col-sm-4">
+		<div class="progress" style="background:#539999">
+			<div class="progress-bar progress-bar-success progress-bar-striped active" role="healthbar" style="width:<%= "#{@pet.health}" %>%"><span class="progress-value">Health: <%= "#{@pet.health}" %></span></div></div></div></div>
+
+	<div class="row"><div class="col-sm-offset-4 col-sm-4">
+		<div class="progress" style="background:#539999">
+			<div class="progress-bar progress-bar-success progress-bar-striped active" role="happinessbar" style="width:<%= "#{@pet.happiness}" %>%"><span class="progress-value">Happiness: <%= "#{@pet.happiness}" %></span></div></div></div></div>
+
+	<div class="row"><div class="col-sm-offset-4 col-sm-4">
+		<div class="progress" style="background:#539999">
+			<div class="progress-bar progress-bar-success progress-bar-striped active" role="hungerbar" style="width:<%= "#{@pet.hunger}" %>%"><span class="progress-value">Hunger: <%= "#{@pet.hunger}" %></span></div></div></div></div>
+
+	<div class="row"><div class="col-sm-offset-4 col-sm-4">
+		<div class="progress" style="background:#539999">
+			<div class="progress-bar progress-bar-success progress-bar-striped active" role="coinbar" style="width:<%= "#{@pet.coins}" %>%"><span class="progress-value">Coins: <%= "#{@pet.coins}" %></span></div></div></div></div>
+
+</div></body>
+
+<footer>
+	<div class="btn-group" role="group">
+		<a class="btn btn-default" href="/pet" role="button">Link</a>
+  	<button type="button" id="refresh_button" class="btn btn-default">Refresh</button>
+  	<button type="button" id="location_button" class="btn btn-default">Location Update</button>
+	</div>
+</footer>
+</html>
