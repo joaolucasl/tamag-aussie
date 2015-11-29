@@ -16,6 +16,8 @@ def rate (here, type)
 
   distance = GreatCircle.distance(here.lat, here.lng, there.lat, there.lng, unit='KM')
 
+  pp results.name
+  puts "\tDistance: #{distance}"
   return rater(distance)
 
 end

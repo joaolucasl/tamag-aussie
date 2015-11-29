@@ -1,6 +1,7 @@
 require_relative '../api/places'
 require_relative '../api/weather'
 require_relative 'location'
+require_relative 'tweet'
 
 class Pet
   attr_reader   :name
@@ -22,6 +23,7 @@ class Pet
     @home = home
     @current = current
     @weather = get_weather(current)
+    @tweeter = Tweet.new
   end
 
   def update_all
@@ -29,6 +31,7 @@ class Pet
     self.update_intelligence
     self.update_hunger
     self.update_coins
+    self.print_stats
   end
 
   def update_health
@@ -46,7 +49,7 @@ class Pet
   end
 
   def update_hunger
-    @hunger += rate(current, 'hunger')
+    @hunger += rate(current, 'grocery_or_supermarket')
     if @hunger > 100
       @hunger = 100
     end
@@ -69,6 +72,7 @@ class Pet
     puts "\tCoins:        #{@coins}"
     puts "\tWeather:      #{@weather["summary"]}"
     puts ""
+    @tweeter.update("#{@name}'s \n\tHealth: #{@health}\n\tIntelligence: #{@intelligence}\n\tHappines: #{@happiness}\n\tWeather: #{@weather["summary"]}\n\t#quthack15")
   end
 
   def weather_summary

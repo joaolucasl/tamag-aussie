@@ -5,7 +5,7 @@ require './config/db.rb'
 
 error = 'ERROR suckaaaa'
 
-here = Location.new(-27.4667, 153.0333)
+here = Location.new(-27.477659, 153.028837)
 
 pet = Pet.new('Bobby', here, here)
 
@@ -22,6 +22,14 @@ get '/pet' do
     pet.update_all
     @pet = pet
     erb :pet
+  rescue
+    error
+  end
+end
+
+post '/pet' do
+  begin
+
   rescue
     error
   end
