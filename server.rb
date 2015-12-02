@@ -1,7 +1,7 @@
 require 'sinatra'
 require_relative 'classes/location'
 require_relative 'classes/pet'
-require './config/db.rb'
+#require './config/db.rb'
 
 error = 'ERROR suckaaaa'
 
