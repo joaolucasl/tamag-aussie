@@ -15,11 +15,11 @@ class Pet
 
   def initialize(name, home, current)
     @name = name
-    @health = 80
-    @intelligence = 80
-    @happiness = 80
-    @hunger = 80
-    @coins = 80
+    @health = 70
+    @intelligence = 70
+    @happiness = 70
+    @hunger = 70
+    @coins = 70
     @home = home
     @current = current
     @weather = get_weather(current)
