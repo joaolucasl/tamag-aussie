@@ -5,6 +5,8 @@ This project is built upon:
   - Ruby
   - _Add other stuff here_
 
+See our presentation [here](https://docs.google.com/presentation/d/1srMlVyDjMdTk0IPZF_rylslNJ-Ira0jjxb4UmkoYwbU/pub?start=true&loop=false&delayms=3000)
+
 ## Getting started
 
 After downloading the project (d'oh), you're going to need Ruby installed - This was developed using Ruby 2.x. After that, install the `bundler` gem, that will deal with our dependecies.
