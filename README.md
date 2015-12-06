@@ -7,6 +7,16 @@ This project is built upon:
 
 See our presentation [here](https://docs.google.com/presentation/d/1srMlVyDjMdTk0IPZF_rylslNJ-Ira0jjxb4UmkoYwbU/pub?start=true&loop=false&delayms=3000)
 
+### List of data sources and APIs used
+
+This project has so far implemented:
+  - [Google Places](https://developers.google.com/places/)
+  - [Forecast.IO](http://forecast.io/)
+  - [Twitter](https://dev.twitter.com/rest/public)
+  
+And plans to implement:
+  - [Queensland Wildlife Data API](https://data.qld.gov.au/dataset/1337d9cd-cb0c-46c5-a1cc-44a6591a54aa)
+
 ## Getting started
 
 After downloading the project (d'oh), you're going to need Ruby installed - This was developed using Ruby 2.x. After that, install the `bundler` gem, that will deal with our dependecies.
